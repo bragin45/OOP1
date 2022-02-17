@@ -14,8 +14,8 @@ public class RadioService {
 
     }
 
-    public RadioService(int maxStation) {
-        numberStation = maxStation + 1;
+    public RadioService(int numberStation) {
+        this.numberStation = maxStation + 1;
 
     }
 

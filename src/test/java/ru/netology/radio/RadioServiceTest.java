@@ -14,6 +14,13 @@ class RadioServiceTest {
     }
 
     @Test
+    public void shouldGetNumberStation10() {
+        RadioService radio = new RadioService(10);
+        radio.getNumberStation();
+        assertEquals(10, radio.getNumberStation());
+    }
+
+    @Test
     public void shouldSetStation0() {
         RadioService radio = new RadioService();
         radio.setCurrentStation(-1);
