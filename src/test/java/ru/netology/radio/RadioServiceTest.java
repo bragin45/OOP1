@@ -8,7 +8,7 @@ class RadioServiceTest {
 
     @Test
     public void shouldGetNumberStation() {
-        RadioService radio = new RadioService();
+        RadioService radio = new RadioService(10);
         radio.getNumberStation();
         assertEquals(10, radio.getNumberStation());
     }
@@ -21,10 +21,10 @@ class RadioServiceTest {
     }
 
     @Test
-    public void shouldSetStation0() {
-        RadioService radio = new RadioService();
-        radio.setCurrentStation(-1);
-        assertEquals(9, radio.getCurrentStation());
+    public void shouldSetStation15() {
+        RadioService radio = new RadioService(20);
+        radio.setCurrentStation(15);
+        assertEquals(15, radio.getCurrentStation());
     }
 
     @Test
